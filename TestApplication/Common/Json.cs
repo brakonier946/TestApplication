@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace TestApplication.Common
+namespace TestApplication.Core.Common
 {
     public static class Json
     {

@@ -1,10 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using TestApplication.Core.Models.Api.Response;
+using TestApplication.Core.Models.Http;
 using TestApplication.Models.Api.Requests;
-using TestApplication.Models.Api.Response;
-using TestApplication.Models.Http;
 
-namespace TestApplication.Services.Http.Login
+namespace TestApplication.Core.Services.Http.Login
 {
     public interface ILoginService
     {

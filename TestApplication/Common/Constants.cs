@@ -1,6 +1,4 @@
-﻿using System.Dynamic;
-
-namespace TestApplication.Common
+﻿namespace TestApplication.Core.Common
 {
     public static class Constants
     {

@@ -1,6 +1,6 @@
 ﻿using MvvmCross.ViewModels;
 
-namespace TestApplication.Presentation.ViewModels.Base
+namespace TestApplication.Core.Presentation.ViewModels.Base
 {
     public abstract class BaseViewModel : MvxNotifyPropertyChanged
     {

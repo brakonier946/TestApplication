@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 
-namespace TestApplication.Services.Storage
+namespace TestApplication.Core.Services.Storage
 {
     public class StorageService : IStorageService
     {

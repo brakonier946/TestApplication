@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using TestApplication.Core.Services.Http.Login;
 using TestApplication.Models.Api.Requests;
-using TestApplication.Services.Http.Login;
 
-namespace TestApplication.Managers.Login
+namespace TestApplication.Core.Managers.Login
 {
     public class LoginManager : BaseManager, ILoginManager
     {

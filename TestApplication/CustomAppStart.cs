@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
-using TestApplication.Presentation.Navigation;
+using TestApplication.Core.Presentation.Navigation;
 
-namespace TestApplication
+namespace TestApplication.Core
 {
     public class CustomAppStart : MvxAppStart
     {

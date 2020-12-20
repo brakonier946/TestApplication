@@ -3,10 +3,10 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using TestApplication.Common;
-using TestApplication.Models.Http;
+using TestApplication.Core.Common;
+using TestApplication.Core.Models.Http;
 
-namespace TestApplication.Services.Http
+namespace TestApplication.Core.Services.Http
 {
     public class HttpService : IHttpService
     {

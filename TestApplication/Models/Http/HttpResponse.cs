@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace TestApplication.Models.Http
+namespace TestApplication.Core.Models.Http
 {
     public class HttpResponse<T> : HttpResponse
         where T : class

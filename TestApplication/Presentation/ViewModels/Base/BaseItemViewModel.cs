@@ -1,4 +1,4 @@
-﻿namespace TestApplication.Presentation.ViewModels.Base
+﻿namespace TestApplication.Core.Presentation.ViewModels.Base
 {
     public class BaseItemViewModel : BaseViewModel
     {

@@ -1,8 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using TestApplication.Models.Http;
+using TestApplication.Core.Models.Http;
 
-namespace TestApplication.Services.Http
+namespace TestApplication.Core.Services.Http
 {
     public interface IHttpService
     {

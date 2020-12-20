@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Commands;
-using TestApplication.Presentation.ViewModels.Base;
+using TestApplication.Core.Presentation.ViewModels.Base;
 
-namespace TestApplication.Presentation.ViewModels.Tasks
+namespace TestApplication.Core.Presentation.ViewModels.Tasks
 {
     public class TasksViewModel : BasePageViewModel
     {

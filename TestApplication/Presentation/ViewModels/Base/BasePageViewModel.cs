@@ -2,9 +2,9 @@
 using MvvmCross;
 using MvvmCross.Commands;
 using MvvmCross.ViewModels;
-using TestApplication.Presentation.Navigation;
+using TestApplication.Core.Presentation.Navigation;
 
-namespace TestApplication.Presentation.ViewModels.Base
+namespace TestApplication.Core.Presentation.ViewModels.Base
 {
     public class BasePageViewModel : BaseViewModel, IMvxViewModel
     {

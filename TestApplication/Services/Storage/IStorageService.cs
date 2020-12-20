@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace TestApplication.Services.Storage
+namespace TestApplication.Core.Services.Storage
 {
     public interface IStorageService
     {

@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Navigation;
-using TestApplication.Presentation.ViewModels.Base;
+using TestApplication.Core.Presentation.ViewModels.Base;
 
-namespace TestApplication.Presentation.Navigation
+namespace TestApplication.Core.Presentation.Navigation
 {
     public class NavigationManager : INavigationManager
     {

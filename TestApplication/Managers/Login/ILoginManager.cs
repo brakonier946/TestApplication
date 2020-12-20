@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace TestApplication.Managers.Login
+namespace TestApplication.Core.Managers.Login
 {
     public interface ILoginManager
     {

@@ -114,9 +114,9 @@
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TestApplication\TestApplication.csproj">
+    <ProjectReference Include="..\TestApplication\Core.csproj">
       <Project>{66A484DF-5884-4D8A-9ACC-B8EDADB65A9B}</Project>
-      <Name>TestApplication</Name>
+      <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

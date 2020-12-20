@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using TestApplication.Presentation.ViewModels.Base;
+using TestApplication.Core.Presentation.ViewModels.Base;
 
-namespace TestApplication.Presentation.Navigation
+namespace TestApplication.Core.Presentation.Navigation
 {
     public interface INavigationManager
     {

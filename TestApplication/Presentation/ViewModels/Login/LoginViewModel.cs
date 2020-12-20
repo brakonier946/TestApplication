@@ -1,6 +1,6 @@
-﻿using TestApplication.Presentation.ViewModels.Base;
+﻿using TestApplication.Core.Presentation.ViewModels.Base;
 
-namespace TestApplication.Presentation.ViewModels.Login
+namespace TestApplication.Core.Presentation.ViewModels.Login
 {
     public class LoginViewModel : BasePageViewModel
     {

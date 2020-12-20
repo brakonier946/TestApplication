@@ -1,7 +1,7 @@
 ﻿using MvvmCross;
-using TestApplication.Services.Storage;
+using TestApplication.Core.Services.Storage;
 
-namespace TestApplication.Managers
+namespace TestApplication.Core.Managers
 {
     public class BaseManager
     {

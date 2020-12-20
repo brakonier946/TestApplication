@@ -2,11 +2,11 @@
 using MvvmCross;
 using MvvmCross.IoC;
 using MvvmCross.ViewModels;
-using TestApplication.Presentation.Navigation;
-using TestApplication.Services.Http;
-using TestApplication.Services.Storage;
+using TestApplication.Core.Presentation.Navigation;
+using TestApplication.Core.Services.Http;
+using TestApplication.Core.Services.Storage;
 
-namespace TestApplication
+namespace TestApplication.Core
 {
     public class App : MvxApplication
     {

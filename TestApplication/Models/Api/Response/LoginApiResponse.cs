@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TestApplication.Models.Api.Response
+namespace TestApplication.Core.Models.Api.Response
 {
     public class LoginApiResponse
     {
