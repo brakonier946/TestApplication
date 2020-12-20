@@ -1,6 +1,8 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Navigation;
 using TestApplication.Core.Presentation.ViewModels.Base;
+using TestApplication.Core.Presentation.ViewModels.Login;
+using TestApplication.Core.Presentation.ViewModels.Tasks;
 
 namespace TestApplication.Core.Presentation.Navigation
 {
@@ -15,7 +17,12 @@ namespace TestApplication.Core.Presentation.Navigation
 
         public Task AppStart()
         {
-            throw new System.NotImplementedException();
+            return _mvxNavigationService.Navigate<LoginViewModel>();
+        }
+
+        public Task ShowTasksView()
+        {
+            return _mvxNavigationService.Navigate<TasksViewModel>();
         }
 
         public Task<bool> CloseView(BasePageViewModel viewModel)

@@ -92,17 +92,39 @@
     <Reference Include="Xamarin.Essentials">
       <HintPath>..\packages\Xamarin.Essentials.1.5.3.2\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_tasks.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_profile.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_tasks.imageset\iconfinder-icon.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_profile.imageset\iconfinder_00-ELASTOFONT-STORE-READY_user-circle_2703062.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_back.imageset\iconfinder_back_172570.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Presentation\" />
+    <Folder Include="Presentation\ViewControllers\" />
+    <Folder Include="Presentation\ViewControllers\Tasks\" />
+    <Folder Include="Presentation\ViewControllers\Login\" />
+    <Folder Include="Presentation\ViewControllers\Base\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Helpers\" />
+    <Folder Include="Presentation\Localization\" />
+    <Folder Include="Assets.xcassets\ic_tasks.imageset\" />
+    <Folder Include="Assets.xcassets\ic_profile.imageset\" />
+    <Folder Include="Assets.xcassets\ic_back.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Presentation\ViewControllers\Login\LoginViewController.xib" />
+    <InterfaceDefinition Include="Presentation\ViewControllers\Tasks\TasksViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -112,6 +134,24 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Presentation\ViewControllers\Base\BaseViewController.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Helpers\NavigationItemHelper.cs" />
+    <Compile Include="Common\Helpers\ViewControllerHelper.cs" />
+    <Compile Include="Presentation\ViewControllers\Login\LoginViewController.cs" />
+    <Compile Include="Presentation\ViewControllers\Login\LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ViewControllers\Tasks\TasksViewController.cs" />
+    <Compile Include="Presentation\ViewControllers\Tasks\TasksViewController.designer.cs">
+      <DependentUpon>TasksViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Styles.cs" />
+    <Compile Include="Presentation\Localization\ResourceStrings.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestApplication\Core.csproj">

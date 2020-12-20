@@ -30,5 +30,8 @@
     <Folder Include="Models\Api\Response\" />
     <Folder Include="Models\Api\Requests\" />
     <Folder Include="Managers\Login\" />
+    <Folder Include="Managers\Tasks\" />
+    <Folder Include="Models\Data\" />
+    <Folder Include="Models\Enums\" />
   </ItemGroup>
 </Project>

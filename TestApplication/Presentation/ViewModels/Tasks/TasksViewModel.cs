@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Core.Managers.Tasks;
+using Core.Models.Enums;
 using MvvmCross.Commands;
 using TestApplication.Core.Presentation.ViewModels.Base;
 
@@ -6,10 +9,14 @@ namespace TestApplication.Core.Presentation.ViewModels.Tasks
 {
     public class TasksViewModel : BasePageViewModel
     {
+        private readonly ITasksManager _tasksManager;
+
         public IMvxAsyncCommand LoadDataCommand { get; }
 
-        public TasksViewModel()
+        public TasksViewModel(ITasksManager tasksManager)
         {
+            _tasksManager = tasksManager;
+
             LoadDataCommand = new MvxAsyncCommand(OnLoadDataAsync);
         }
 
@@ -18,9 +25,9 @@ namespace TestApplication.Core.Presentation.ViewModels.Tasks
             return LoadDataCommand.ExecuteAsync();
         }
 
-        private Task OnLoadDataAsync()
+        private async Task OnLoadDataAsync()
         {
-            return Task.CompletedTask;
+            await _tasksManager.GetListOfTasksAsync(SortField.Id, SortDirection.Asc, CancellationToken.None);
         }
     }
 }

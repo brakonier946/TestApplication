@@ -7,6 +7,8 @@ namespace TestApplication.Core.Presentation.Navigation
     {
         Task AppStart();
 
+        Task ShowTasksView();
+
         Task<bool> CloseView(BasePageViewModel viewModel);
     }
 }

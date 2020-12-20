@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TestApplication.Core.Common;
+using TestApplication.Core.Models.Api.Response;
 using TestApplication.Core.Models.Http;
 
 namespace TestApplication.Core.Services.Http
@@ -37,7 +38,7 @@ namespace TestApplication.Core.Services.Http
         {
             var request = new HttpRequestMessage(ToHttpMethod(method), url)
             {
-                Content = new StringContent(content, Encoding.Default, "application/json")
+                Content = new StringContent(content, Encoding.Default, "multipart/form-data")
             };
 
             return ExecuteAsync(request, cancellationToken);
@@ -90,10 +91,10 @@ namespace TestApplication.Core.Services.Http
             switch (response.ResponseStatus)
             {
                 case HttpResponseStatus.Success:
-                    var (data, exception) = Json.Deserialize<T>(response.RawData);
+                    var (data, exception) = Json.Deserialize<BaseApiResponse<T>>(response.RawData);
                     return data is null
                         ? HttpResponse<T>.ParseError(exception, response.RawData, response.StatusCode)
-                        : HttpResponse<T>.Success(data);
+                        : HttpResponse<T>.Success(data.Message);
 
                 case HttpResponseStatus.TimedOut:
                     return HttpResponse<T>.TimedOut();
