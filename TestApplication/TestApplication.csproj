@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.470" />
+    <PackageReference Include="MvvmCross" Version="7.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Managers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Storage\" />
+    <Folder Include="Services\Http\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Http\" />
+    <Folder Include="Common\" />
+    <Folder Include="Presentation\" />
+    <Folder Include="Presentation\ViewModels\" />
+    <Folder Include="Presentation\ViewModels\Base\" />
+    <Folder Include="Presentation\Navigation\" />
+    <Folder Include="Presentation\ViewModels\Tasks\" />
+    <Folder Include="Presentation\ViewModels\Login\" />
+    <Folder Include="Services\Http\Tasks\" />
+    <Folder Include="Services\Http\Login\" />
+    <Folder Include="Models\Api\" />
+    <Folder Include="Models\Api\Response\" />
+    <Folder Include="Models\Api\Requests\" />
+    <Folder Include="Managers\Login\" />
+  </ItemGroup>
+</Project>
